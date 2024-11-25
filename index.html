@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmers' Marketplace - Auctions</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="auth.js"></script>
+  <script type="module" src="auction.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Farmers' Marketplace</h1>
+    <div id="auth-container">
+      <button id="logout-button">Logout</button>
+      <p id="user-info"></p>
+    </div>
+  </header>
+
+  <main>
+    <section id="auction-list">
+      <h2>Live Auctions</h2>
+      <div id="auctions"></div>
+    </section>
+
+    <section id="create-auction">
+      <h2>Create Auction</h2>
+      <input type="text" id="product-name" placeholder="Product Name" />
+      <input type="number" id="starting-price" placeholder="Starting Price (INR)" />
+      <button id="create-button">Start Auction</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Farmers' Marketplace. Empowering farmers with fair trade.</p>
+  </footer>
+</body>
+</html>
